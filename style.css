@@ -1,0 +1,51 @@
+.container {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    height: 25px;
+}
+
+.header li {
+    float: left;
+    list-style: none;
+    margin: 5px 15px;
+}
+
+.header li:hover {
+    color: #4287f5;
+}
+
+.introduction {
+    padding: 25px;
+    border-radius: 10px;
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+    background-color: white;
+    text-align: center;
+}
+
+.introduction h2 {
+    color: gray;
+    font-size: 18px;
+}
+
+.languages {
+    background-color: #4287f5;
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px gray;
+    width: 80%;
+    margin: 20px auto;
+}
+.projects {
+    background-color: #4287f5;
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px gray;
+    width: 80%;
+    margin: 20px auto;
+}
