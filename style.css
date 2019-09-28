@@ -1,15 +1,19 @@
+body {
+    margin: 0;
+}
+
 .container {
     font-family: 'Montserrat', sans-serif;
 }
 
 .header {
-    height: 25px;
+    height: 45px;
 }
 
 .header li {
     float: left;
-    list-style: none;
     margin: 5px 15px;
+    list-style: none;
 }
 
 .header li:hover {
@@ -20,8 +24,8 @@
     padding: 25px;
     border-radius: 10px;
     width: 80%;
-    height: 300px;
-    margin: 20px auto;
+    height: 540px;
+    margin: 0 auto;
     background-color: white;
     text-align: center;
 }
@@ -31,15 +35,38 @@
     font-size: 18px;
 }
 
-.languages {
+.introduction img {
+    width: 50%;
+}
+
+.caption {
+    color: gray;
+    margin: 0;
+}
+
+.box {
+    width: 100%;
     background-color: #4287f5;
+    text-align: center;
     color: white;
+    height: 300px;
+    padding-top: 50px;
+}
+
+.languages {
+    background-color: white;
+    color: black;
     padding: 25px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px gray;
     width: 80%;
     margin: 20px auto;
 }
+
+.languages li {
+    list-style: none;
+}
+
 .projects {
     background-color: #4287f5;
     color: white;
