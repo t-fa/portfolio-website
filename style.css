@@ -67,6 +67,17 @@ body {
     list-style: none;
 }
 
+.language-sub {
+    width: 33%;
+    height: 500px;
+    float: left;
+}
+
+.mid {
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
 .projects {
     background-color: #4287f5;
     color: white;
