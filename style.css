@@ -10,6 +10,12 @@ body {
     height: 45px;
 }
 
+.header img {
+    max-height: 30px;
+    float: right;
+    padding-right: 40px;
+}
+
 .header li {
     float: left;
     margin: 5px 15px;
