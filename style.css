@@ -67,6 +67,7 @@ body {
     box-shadow: 2px 2px 5px gray;
     width: 80%;
     margin: 20px auto;
+    height: 300px;
 }
 
 .languages li {
@@ -75,7 +76,6 @@ body {
 
 .language-sub {
     width: 33%;
-    height: 500px;
     float: left;
 }
 
