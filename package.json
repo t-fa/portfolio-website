@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/t-fa/portfolio-website/issues"
   },
-  "homepage": "https://github.com/t-fa/portfolio-website#readme"
+  "homepage": "https://github.com/t-fa/portfolio-website#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
 }
