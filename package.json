@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Where my portfolio site lives",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t-fa/portfolio-website.git"
+  },
+  "author": "Tom Fattah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t-fa/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/t-fa/portfolio-website#readme"
+}
