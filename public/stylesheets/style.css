@@ -98,3 +98,22 @@ body {
     width: 80%;
     margin: 20px auto;
 }
+
+.contact {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.contact-button {
+    width: 10em;
+    background-color: #4287f5;
+    color: white;
+    border-radius: 5px;
+    height: 2em;
+}

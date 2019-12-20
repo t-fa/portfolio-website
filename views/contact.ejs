@@ -1,5 +1,26 @@
 <%- include('partials/header') %>
 
+<div class="contact">
+    <h2 id="contacthello">Say hello!</h2>
+    <form action="" method="POST">
+        <label for="name">Name
+            <input class="contact-input" name="name" type="text">
+        </label>
 
+        <label for="subject">Subject
+            <input class="contact-input" name="subject" type="text">
+        </label>
+
+        <label for="body">Body
+            <textarea rows="20" name="body" class="contact-input"></textarea>
+        </label>
+
+        <div class="btn">
+            <label>
+                    <input class="contact-button" type="submit">
+            </label>
+        </div>
+    </form>
+</div>
         
 <%- include('partials/footer') %>
