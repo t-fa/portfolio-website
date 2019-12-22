@@ -24,7 +24,6 @@ TO DO:
 -Make projects section prettier
 -Make site responsive
 -Make contact form validate input
--Make contact form asynchronous holy crap I'm gonna use AJAX????
 */
 
 app.get('/', function(req, res){
@@ -41,7 +40,6 @@ app.post('/', function(req, res){
     data.email = req.body.email;
     data.subject = req.body.subject;
     data.body = req.body.body;
-    console.log(data);
     var content = "Name: " + data.name + "\n Email: " + data.email + "\n Subject: " 
     + data.subject + "\n Body: " + data.body + "\n Sent from nodeMailer.";
     
