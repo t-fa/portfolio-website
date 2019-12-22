@@ -40,6 +40,7 @@ app.post('/', function(req, res){
     data.email = req.body.email;
     data.subject = req.body.subject;
     data.body = req.body.body;
+    console.log("Data: " + data);
     var content = "Name: " + data.name + "\n Email: " + data.email + "\n Subject: " 
     + data.subject + "\n Body: " + data.body + "\n Sent from nodeMailer.";
     
@@ -52,9 +53,10 @@ app.post('/', function(req, res){
       
     transporter.sendMail(mailOptions, function(error, info){
         if(error){
-          console.log(error);
+            console.log(error);
         } else {
-          console.log('Email sent: ' + info.response);
+            res.json();
+            console.log('Email sent: ' + info.response);
         }
     });
 });
