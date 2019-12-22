@@ -1,4 +1,4 @@
-var express = require("express"),
+const express = require("express"),
               app = express(),
               bodyParser = require("body-parser"),
               config = require("./secrets"),
@@ -56,8 +56,7 @@ app.post('/', function(req, res){
         } else {
           console.log('Email sent: ' + info.response);
         }
-    });    
-    res.render('index');
+    });
 });
 
 app.use(function(req,res){
