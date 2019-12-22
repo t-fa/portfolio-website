@@ -37,7 +37,7 @@ function contactForm(){
             req.setRequestHeader('Content-Type', 'application/json');
             req.addEventListener('load',function(){
                 if(req.status >= 200 && req.status < 400){
-                    span.textContent = "Email sent!";
+                    span.textContent = "Email successfully sent!";
                 } else {
                     span.textContent = "An error occurred. Please try again.";
                 }
