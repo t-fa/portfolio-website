@@ -12,7 +12,7 @@ app.set('port', 8080);
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'thomas.fattah@gmail.com',
+        user: 'tomfattahbot@gmail.com',
         pass: config.emailPassword
     }
 });
@@ -22,7 +22,6 @@ TO DO:
 -Add more projects to main page
 -Make projects section prettier
 -Make site responsive
--Make contact form actually work
 -Make contact form validate input
 -Make contact form asynchronous holy crap I'm gonna use AJAX????
 */
@@ -38,14 +37,17 @@ app.get('/contact', function(req, res){
 app.post('/', function(req, res){
     var data = {};
     data.name = req.body.name;
+    data.email = req.body.email;
     data.subject = req.body.subject;
     data.body = req.body.body;
+    var content = "Name: " + data.name + "\n Email: " + data.email + "\n Subject: " 
+    + data.subject + "\n Body: " + data.body + "\n Sent from nodeMailer.";
     
     var mailOptions = {
         from: data.name,
-        to: transporter.options.auth.user,
+        to: "thomas.fattah@gmail.com",
         subject: data.subject,
-        text: data.body
+        text: content
     };
       
     transporter.sendMail(mailOptions, function(error, info){
