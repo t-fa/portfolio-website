@@ -22,4 +22,28 @@ function bearMode(){
     }
 }
 
+function contactForm(){
+    var submitbutton = document.getElementById('submitbutton');
+    if(submitbutton){
+        submitbutton.addEventListener('click', function(event){
+            var req = new XMLHttpRequest();
+            var span = document.getElementById("response");
+            req.open('POST', url, true);
+            req.setRequestHeader('Content-Type', 'application/json');
+            req.addEventListener('load',function(){
+                if(req.status >= 200 && req.status < 400){
+                    span.textContent = "Email sent!";
+                } else {
+                    span.textContent = "An error occurred. Please try again.";
+                }
+            req.send();
+            }
+            event.preventDefault();
+        }
+    }
+}
+
+if(document.getElementById("submitbutton")){
+    document.addEventListener('DOMContentLoaded', contactForm);
+}
 document.getElementById("bearmode").addEventListener('click', bearMode);
