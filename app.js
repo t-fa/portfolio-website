@@ -5,6 +5,7 @@ const express = require("express"),
               nodemailer = require("nodemailer");
 
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
 app.set('port', 8080);
@@ -40,7 +41,7 @@ app.post('/', function(req, res){
     data.email = req.body.email;
     data.subject = req.body.subject;
     data.body = req.body.body;
-    console.log("Data: " + data);
+    console.log(data);
     var content = "Name: " + data.name + "\n Email: " + data.email + "\n Subject: " 
     + data.subject + "\n Body: " + data.body + "\n Sent from nodeMailer.";
     
