@@ -102,6 +102,7 @@ body {
 .contact {
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 .contact-input {
@@ -116,4 +117,9 @@ body {
     color: white;
     border-radius: 5px;
     height: 2em;
+}
+
+#response {
+    text-align: center;
+    display: block;
 }
