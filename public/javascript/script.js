@@ -29,11 +29,11 @@ function contactForm(){
             var req = new XMLHttpRequest();
             var payload = {};
             payload.name = document.getElementById("contactname").value;
-            payload.name = document.getElementById("contactemail").value;
-            payload.name = document.getElementById("contactsubject").value;
-            payload.name = document.getElementById("contactbody").value;
+            payload.email = document.getElementById("contactemail").value;
+            payload.subject = document.getElementById("contactsubject").value;
+            payload.body = document.getElementById("contactbody").value;
             var span = document.getElementById("response");
-            req.open('POST', "http://127.0.0.1:8080/", true);
+            req.open('POST', "/", true);
             req.setRequestHeader('Content-Type', 'application/json');
             req.addEventListener('load',function(){
                 if(req.status >= 200 && req.status < 400){
