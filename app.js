@@ -1,7 +1,7 @@
 const express = require("express"),
               app = express(),
               bodyParser = require("body-parser"),
-              config = require("./secrets"),
+            //   config = require("./secrets"),
               nodemailer = require("nodemailer");
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -14,7 +14,7 @@ var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: 'tomfattahbot@gmail.com',
-        pass: config.emailPassword
+        pass: process.env.EMAIL_PASS
     }
 });
 
