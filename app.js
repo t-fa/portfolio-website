@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
-app.set('port', 8080);
+var port = process.env.port || 8080;
 
 var transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -70,6 +70,6 @@ app.use(function(req,res){
   res.render('500');
 });
 
-app.listen(app.get('port'), function(){
-    console.log('Server is running on ' + app.get('port') + '; press Ctrl-C to terminate.');
+app.listen(port, function(){
+    console.log('Server is running on ' + port + '; press Ctrl-C to terminate.');
   });
