@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
-var port = process.env.port || 8080;
+var port = process.env.PORT || 8080;
 
 var transporter = nodemailer.createTransport({
     service: 'gmail',
