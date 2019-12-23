@@ -33,7 +33,7 @@ body {
 .introduction {
     padding: 25px;
     border-radius: 10px;
-    width: 80%;
+    /* width: 80%; */
     height: 540px;
     margin: 0 auto;
     background-color: white;
@@ -47,6 +47,7 @@ body {
 
 .introduction img {
     width: 50%;
+    padding: 0;
 }
 
 .caption {
@@ -97,6 +98,18 @@ body {
     box-shadow: 2px 2px 5px gray;
     width: 80%;
     margin: 20px auto;
+}
+
+.projects li {
+    list-style: none;
+}
+
+.projects a {
+    color: black;
+}
+
+.projects li:nth-of-type(even){
+    margin-bottom: 20px;
 }
 
 .contact {
