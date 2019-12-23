@@ -38,6 +38,10 @@ function contactForm(){
             req.addEventListener('load',function(){
                 if(req.status >= 200 && req.status < 400){
                     span.textContent = "Email successfully sent!";
+                    document.getElementById("contactname").value = "";
+                    document.getElementById("contactemail").value = "";
+                    document.getElementById("contactsubject").value = "";
+                    document.getElementById("contactbody").value = "";
                 } else {
                     span.textContent = "An error occurred. Please try again.";
                 }
