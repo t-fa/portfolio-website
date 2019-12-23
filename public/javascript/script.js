@@ -39,7 +39,7 @@ function contactForm(){
                 req.open('POST', "/", true);
                 req.setRequestHeader('Content-Type', 'application/json');
                 req.addEventListener('load',function(){
-                    if(req.status >= 200 && req.status < 400 && inputVerified){
+                    if(req.status >= 200 && req.status < 400){
                         span.textContent = "Email successfully sent!";
                         document.getElementById("contactname").value = "";
                         document.getElementById("contactemail").value = "";
