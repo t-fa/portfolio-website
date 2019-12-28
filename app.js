@@ -1,7 +1,6 @@
 const express = require("express"),
               app = express(),
               bodyParser = require("body-parser"),
-            //   config = require("./secrets"),
               nodemailer = require("nodemailer");
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -17,14 +16,6 @@ var transporter = nodemailer.createTransport({
         pass: process.env.EMAIL_PASS
     }
 });
-
-/*
-TO DO:
--Add more projects to main page
--Make projects section prettier
--Make site responsive
--Make contact form validate input
-*/
 
 app.get('/', function(req, res){
     res.render('index');
