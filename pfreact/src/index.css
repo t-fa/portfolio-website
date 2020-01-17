@@ -1,13 +1,172 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  height: 45px;
+}
+
+.header img {
+  max-height: 30px;
+  float: right;
+  padding-right: 40px;
+}
+
+.header li {
+  float: left;
+  margin: 5px 15px;
+  list-style: none;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+}
+.header a:hover {
+  color: #4287f5;
+}
+
+.introduction {
+  padding: 25px;
+  border-radius: 10px;
+  height: 540px;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .introduction {
+    height: 400px;
+  }
+}
+
+.introduction h2 {
+  color: gray;
+  font-size: 18px;
+}
+
+.introimg {
+  width: 50%;
+  height: auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .introimg {
+    width: 75%;
+  }
+}
+
+.caption {
+  color: gray;
+  margin: 0;
+}
+
+.box {
+  width: 100%;
+  background-color: #4287f5;
+  text-align: center;
+  color: white;
+  height: 300px;
+  padding-top: 50px;
+  margin-bottom: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .box {
+    margin-bottom: 200px;
+  }
+}
+
+.languages {
+  background-color: white;
+  color: black;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px gray;
+  width: 80%;
+  margin: 20px auto;
+  height: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  .languages {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .languages h3, .languages h4 {
+    font-size: 1em;
+  }
+}
+
+.languages li {
+  list-style: none;
+}
+
+.language-sub {
+  width: 33%;
+  float: left;
+}
+
+.mid {
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+}
+
+.projects {
+  background-color: #4287f5;
+  color: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px gray;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.projects li {
+  list-style: none;
+}
+
+.projects a {
+  color: black;
+}
+
+.projects li:nth-of-type(even){
+  margin-bottom: 20px;
+}
+
+.contact {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.contact-input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.contact-button {
+  width: 10em;
+  background-color: #4287f5;
+  color: white;
+  border-radius: 5px;
+  height: 2em;
+}
+
+#response {
+  text-align: center;
+  display: block;
+}
+
+.error {
+  color: red;
 }
