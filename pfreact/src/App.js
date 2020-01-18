@@ -23,10 +23,14 @@ class App extends React.Component {
         ? <Introduction 
             name="Tom Fattah"
             hand="bare"
+            img="https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
+            text="I can build a custom tailed solution for you using the latest technologies."
           />
         : <Introduction 
             name="a bear" 
             hand="bear"
+            img="https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
+            text="This is me thinking about computers:"
           />
         }
       </div>
@@ -59,8 +63,8 @@ class Introduction extends React.Component {
       <div className="introduction">
         <h1>Hi there! I'm {this.props.name}</h1>
         <h2>I build things with my {this.props.hand} hands...using computer science!</h2>
-        <p>I can build a custom tailed solution for you using the latest technologies.</p>
-        <img className="introimg" src="https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80" />
+        <p>{this.props.text}</p>
+        <img className="introimg" src={this.props.img} />
       </div>
     )
   }
