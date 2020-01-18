@@ -33,6 +33,7 @@ class App extends React.Component {
             text="This is me thinking about computers:"
           />
         }
+        <Languages />
       </div>
     );
   } 
@@ -69,5 +70,35 @@ class Introduction extends React.Component {
     )
   }
 };
+
+function Languages() {
+  return (
+    <div className="box">
+      <h2>Help me help you</h2>
+      <div className="languages">
+        <p>I'm skilled in multiple languages. I can meet your needs!</p>
+
+        <div className="language-sub">
+          <h3>Front-end Developer</h3>
+					<h4>Languages:</h4>
+					<p>HTML, CSS, Javascript, React, jQuery</p>
+        </div>
+
+        <div class="language-sub mid">
+          <h3>Back-end Developer</h3>
+					<h4>Languages:</h4>
+					<p>Node.js, Express</p>
+					<h4>Databases:</h4>
+					<p>MongoDB, MySQL</p>
+        </div>
+
+        <div className="language-sub">
+          <h3>Software Engineering</h3>
+					<p>C, C++, Python</p>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 export default App;
