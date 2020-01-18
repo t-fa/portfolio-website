@@ -4,15 +4,22 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      bearMode: false
+      bearBool: false
     };
+    this.bearMode = this.bearMode.bind(this);
+  }
+  bearMode(){
+    this.setState(state => ({
+      bearBool: !state.bearBool
+    }));
   }
   render() {
     return (
       <div>
+        <button onClick={this.bearMode}>Click Me!</button>
         <Header />
         {
-        this.state.bearMode === false
+        this.state.bearBool === false
         ? <Introduction 
             name="Tom Fattah"
             hand="bare"
